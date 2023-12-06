@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Airbnb</title>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- custom css file link-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+
+<!-- header section starts-->
+
+<section class="header">
+      
+   <div class="flex">
+      <a href="#home" class="logo">Airbnb</a>
+      <a href="#availability" class="btn">check availability</a>
+      <div id="menu-btn" class="fas fa-bars"></div>
+   </div>
+
+   <nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#reservation">Reservation</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+    <a href="#reviews">Reviews</a>
+   </nav>
+
+</section>
+
+<!-- header section ends-->
+
+<!-- home section starts-->
+
+<section class="home" id="home">
+
+   <div class="swiper home-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="box swiper-slide">
+            <img src="images/image1.jpg" alt="">
+            <div class="flex">
+               <h3>Cabin in Calaca, Philippines</h3>
+               <h2>(₱15,406 night)</h2>
+               <h2>★ 4.93</h2>
+               <a href="availability" class="btn">check availability</a>
+            </div>
+         </div>
+
+         <div class="box swiper-slide">
+            <img src="images/image2.jpg" alt="">
+            <div class="flex">
+               <h3>Home in San Vicente, Philippines</h3>
+               <h2>(₱8,730 night)</h2>
+               <h2>★ 4.88</h2>
+               <a href="#reservation" class="btn">make a reservation</a>
+            </div>
+         </div>
+
+         <div class="box swiper-slide">
+            <img src="images/image3.jpg" alt="">
+            <div class="flex">
+               <h3>Home in Baguio, Philippines</h3>
+               <h2>(₱12,595 night)</h2>
+               <h2>★ 4.85</h2>
+               <a href="#contact" class="btn">contact us</a>
+            </div>
+         </div>
+
+         <div class="box swiper-slide">
+            <img src="images/image4.jpg" alt="">
+            <div class="flex">
+               <h3>Home in Malay, Philippines</h3>
+               <h2>(₱62,765 night)</h2>
+               <h2>★ 4.98</h2>
+               <a href="availability" class="btn">check availability</a>
+            </div>
+         </div>
+
+         <div class="box swiper-slide">
+            <img src="images/image5.jpg" alt="">
+            <div class="flex">
+               <h3>Cottage in Sipalay, Philippines</h3>
+               <h2>(₱1,384 night)</h2>
+               <h2>★ 4.91</h2>
+               <a href="availability" class="btn">make a reservation</a>
+            </div>
+         </div>
+
+         <div class="box swiper-slide">
+            <img src="images/image6.jpg" alt="">
+            <div class="flex">
+               <h3>Villa in San Felipe, Philippines</h3>
+               <h2>(₱22,721 night)</h2>
+               <h2>★ 4.84</h2>
+               <a href="availability" class="btn">contact us</a>
+            </div>
+         </div>
+
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+   </div>
+
+</section>
+
+<!-- home section ends-->
+
+<!-- availability section starts-->
+
+<section class="availability" id="availability">
+
+   <form action="" method="post">
+      <div class="flex">
+         <div class="box">
+            <p>check in <span>*</span></p>
+            <input type="date" name="check_in" class="input" required>
+         </div>
+         <div class="box">
+            <p>check out <span>*</span></p>
+            <input type="date" name="check_out" class="input" required>
+         </div>
+         <div class="box">
+            <p>adults <span>*</span></p>
+            <select name="adults" class="input" required>
+               <option value="1">1 adult</option>
+               <option value="2">2 adults</option>
+               <option value="3">3 adults</option>
+               <option value="4">4 adults</option>
+               <option value="5">5 adults</option>
+               <option value="6">6 adults</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>child <span>*</span></p>
+            <select name="childs" class="input" required>
+               <option value="-">0 child</option>
+               <option value="1">1 child</option>
+               <option value="2">2 childs</option>
+               <option value="3">3 childs</option>
+               <option value="4">4 childs</option>
+               <option value="5">5 childs</option>
+               <option value="6">6 childs</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>rooms <span>*</span></p>
+            <select name="rooms" class="input" required>
+               <option value="1">1 room</option>
+               <option value="2">2 rooms</option>
+               <option value="3">3 rooms</option>
+               <option value="4">4 rooms</option>
+               <option value="5">5 rooms</option>
+               <option value="6">6 rooms</option>
+            </select>
+         </div>
+      </div>
+      <input type="submit" value="check availability" name="check" class="btn">
+   </form>
+
+</section>
+
+<!-- availability section ends-->
+
+<!-- about section starts-->
+
+<section class="about" id="about">
+
+   <div class="row">
+      <div class="image">
+         <img src="images/image4.jpg">
+      </div>
+      <div class="content">
+         <h3>best review:</h3>
+         <h2>(Home In Malay)</h2>
+         <p>The picture of the house speak for themselves, but it is our staff and service that will truly give you a memorable vacation.</p>
+         <a href="#reservation" class="btn">make a reservation</a>
+      </div>
+   </div>
+
+   <div class="row reverse">
+      <div class="image">
+         <img src="images/image1.jpg">
+      </div>
+      <div class="content">
+         <h3>best review:</h3>
+         <h2>(Cabin In Calaca)</h2>
+         <p>Imagine waking up to the stunning panoramic view of Nasugbu's rolling terrain with Mt Talamitan and Mt Pico de Loro as backdrop. The 84 sqm glass cabin boasts of such unrivaled view. The cabin's close proximity to the hillside town of Tagaytay and beaches of Nasugbu also makes it a perfect quick escape from the city.</p>
+         <a href="#contact" class="btn">contact us</a>
+      </div>
+   </div>
+
+   <div class="row">
+      <div class="image">
+         <img src="images/image5.jpg">
+      </div>
+      <div class="content">
+         <h3>best reviews</h3>
+         <h2>(Cottage In Sipalay)</h2>
+         <p>Chillax is an independent stylish built with Fan and without Hot Water and Aircon. A beautiful Beach very special situated, with gorgeous Sunsets invites for great Swimming.</p>
+         <a href="#availability" class="btn">check availability</a>
+      </div>
+   </div>
+
+   
+</section>
+
+<!-- about section ends-->
+
+<!-- reservation section starts-->
+
+<section class="reservation" id="reservation">
+
+   <form action="" method="post">
+      <h3>make a reservation</h3>
+      <div class="flex">
+         <div class="box">
+            <p>check in <span>*</span></p>
+            <input type="date" name="check_in" class="input" required>
+         </div>
+         <div class="box">
+            <p>check out <span>*</span></p>
+            <input type="date" name="check_out" class="input" required>
+         </div>
+         <div class="box">
+            <p>adults <span>*</span></p>
+            <select name="adults" class="input" required>
+               <option value="1">1 adult</option>
+               <option value="2">2 adults</option>
+               <option value="3">3 adults</option>
+               <option value="4">4 adults</option>
+               <option value="5">5 adults</option>
+               <option value="6">6 adults</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>child <span>*</span></p>
+            <select name="childs" class="input" required>
+               <option value="-">0 child</option>
+               <option value="1">1 child</option>
+               <option value="2">2 childs</option>
+               <option value="3">3 childs</option>
+               <option value="4">4 childs</option>
+               <option value="5">5 childs</option>
+               <option value="6">6 childs</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>rooms <span>*</span></p>
+            <select name="rooms" class="input" required>
+               <option value="1">1 room</option>
+               <option value="2">2 rooms</option>
+               <option value="3">3 rooms</option>
+               <option value="4">4 rooms</option>
+               <option value="5">5 rooms</option>
+               <option value="6">6 rooms</option>
+            </select>
+         </div>
+      </div>
+      <input type="submit" value="check availability" name="check" class="btn">
+   </form>
+
+</section>
+
+<!-- reservation section ends-->
+
+<!-- gallery section starts-->
+
+<section class="gallery" id="gallery">
+
+   <div class="swiper gallery-slider">
+      <div class="swiper-wrapper">
+         <img src="images/cabin.webp" class="swiper-slide" alt="">
+         <img src="images/sanvicente.webp" class="swiper-slide" alt="">
+         <img src="images/baguio.webp" class="swiper-slide" alt="">
+         <img src="images/malay.webp" class="swiper-slide" alt="">
+         <img src="images/sipalay.webp" class="swiper slide" alt="">
+         <img src="images/villasanfelipe.webp" class="swiper-slide" alt="">
+      </div>
+      <div class="swiper-pagination"></div>
+   </div>
+
+</section>
+
+<!-- gallery section ends-->
+
+<!-- contact section starts-->
+
+<section class="contact" id="contact">
+
+   <div class="row">
+
+      <form action="" method="post">
+         <h3>send us message</h3>
+         <input type="text" name="name" required maxlength="50" placeholder="enter your name" class="box">
+         <input type="email" name="email" required maxlength="50" placeholder="enter your email" class="box">
+         <input type="number" name="number" required maxlength="10" min="0" max="99999999999" placeholder="enter your number" class="box">
+         <textarea name="msg" class="box" required maxlength="1000" placeholder="enter your message" cols="30" rows="10"></textarea>
+         <input type="submit" value="send message" name="send" class="btn">
+      </form>
+
+      <div class="faq">
+         <h3 class="title">frequently asked questions</h3>
+         <div class="box active">
+            <h3>How to Cancel?</h3>
+            <p>Your plans have changed and now you need to cancel your reservation. No problem. You can go to your Trips to cancel or make changes to your reservation.</p>
+         </div>
+         <div class="box">
+            <h3>Airbnb service fees</h3>
+            <p>To help Airbnb run smoothly and to cover the cost of services like 24/7 customer support, we charge a service fee when a booking is confirmed.</p>
+         </div>
+         <div class="box">
+            <h3>How to start a business on Airbnb</h3>
+            <p> You don’t need to have experience running a business to become a successful Host on Airbnb. Take it from Superhosts Bryan and Catherine in Columbus, Ohio—neither had any small business or hospitality experience before they got started on Airbnb by listing a spare bedroom.</p>
+         </div>
+         <div class="box">
+            <h3>Understanding Your Calendar and Booking Settings</h3>
+            <p>Your calendar and booking settings give you control over when you share your space, from a few weekends to 365 days a year. Mastering these settings can help you meet your guests’ needs and run your hosting business more smoothly.</p>
+         </div>
+         <div class="box">
+            <h3>How Airbnb Protects Hosts</h3>
+            <p>Whether you’re a new Host or just exploring the idea of hosting, you might have questions about protecting your space and belongings when travelers stay in your home. Damage and safety incidents are extremely rare, but Airbnb has many protections in place for both Hosts and guests.</p>
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- contact section ends-->
+
+<!-- reviews section starts-->
+
+<section class="reviews" id="reviews">
+
+   <div class="swiper reviews-slider">
+      
+      <div class="swiper-wrapper">
+         <div class="swiper-slide box">
+            <img src="reviews/christineglory.jpg" alt="">
+            <h3>Christine Glory</h3>
+            <p>They were respectful and careful. I'd be more than happy.</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="reviews/clairblancaflor.jpg" alt="">
+            <h3>Clair Blancaflor</h3>
+            <p>They were kind, did everything by the book, and even left a thank-you card. Wonderful to have you here!</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="reviews/haroldjosh.png" alt="">
+            <h3>Harold Josh</h3>
+            <p>Kind, Thoughtful, and Respectful of the space. Incredibly suggested!</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="reviews/jaeandrewsmagos.png" alt="">
+            <h3>Jae Andrews Magos</h3>
+            <p>They were reliable tenants who kept in touch and left the place spotless. Incredibly suggested!</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="reviews/ken.jpg" alt="">
+            <h3>Ken</h3>
+            <p>They left the unit in perfect order and were respectful of the regulations</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="reviews/melodydelacruz.jpg" alt="">
+            <h3>Melody Dela Cruz</h3>
+            <p>They were kind, communicative, and thorough in their cleaning of the unit. I would have no issues with having them back as guests.</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="reviews/myla.jpg" alt="">
+            <h3>Myla BautistaWelch</h3>
+            <p>I would highly recommend!</p>
+         </div>
+         <div class="swiper-slide box">
+            <img src="reviews/ramir.jpg" alt="">
+            <h3>Ramir Paulo Apin</h3>
+            <p>I had a wonderful time</p>
+         </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+   </div>
+
+</section>
+
+<!-- reviews section ends-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+<!-- custom js file link-->
+<script src="script.js"></script>
+
+</body>
+</html>
